@@ -181,8 +181,8 @@ On `EndPlates_AfterUpdate`, `PelmetType` is set based on the value of `EndPlates
 ---
 #### Springs
 An extra input field called Cable Spring was added. 
-L/H Spring input field is disabled and Cable Spring enabled  when cable guided
-Only allows selection when blind type is crank operated and only allows selection of correct chirality
+L/H Spring input field is disabled and Cable Spring enabled  when cable guided. 
+Only allows selection when blind type is crank operated and only allows selection of correct chirality. 
 Auto populates when blind are 2.5m or more wide and disables all other options
 
 ##### Cable Spring options
