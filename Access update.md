@@ -183,7 +183,7 @@ On `EndPlates_AfterUpdate`, `PelmetType` is set based on the value of `EndPlates
 An extra input field called Cable Spring was added. 
 L/H Spring input field is disabled and Cable Spring enabled  when cable guided. 
 Only allows selection when blind type is crank operated and only allows selection of correct chirality. 
-Auto populates when blind are 2.5m or more wide and disables all other options
+Auto populates when blind are 2.5m or more wide and disables all other options. 
 
 ##### Cable Spring options
 `CableSpring` default options = `"L/H STANDARD", "R/H STANDARD", "NONE"`
@@ -301,6 +301,22 @@ Set in `MinWidth_LostFocus`
 Set in `ToggleAndSetSideSplineValues`, `Fabric_AfterUpdate`, `OverallDropHeight_AfterUpdate` and `BottomBarType_AfterUpdate`.
 
 ---
+## Changes to `tblProducts`
+Added the following rows:
+
+| Product ID   | Description                                                            | Measure Unit |
+| ------------ | ---------------------------------------------------------------------- | ------------ |
+| Zip 1802     | Cable Assembly and Guides                                              | pair         |
+| Zip 1803     | Floor fix fittings Cable Guide System                                  | pair         |
+| Zip 1804     | Wall fix fittings Cable Guide System                                   | pair         |
+| Zip 1806     | Pelmet Reinforcement Plate for Wall/Face Fix Cable-Guided Installation | Each         |
+| Zip 1808-1.2 | 1.2m, Cable Guide Crank Handle, White                                  | Each         |
+| Zip 1808-1.5 | 1.5m, Cable Guide Crank Handle, White                                  | Each         |
+| Zip 1808-1.8 | 1.8m, Cable Guide Crank Handle, White                                  | Each         |
+| Zip 1812     | Cable-Guided Stainless Steel End Brackets                              | pair         |
+
+
+---
 ### Notes
 - [x] Need to break load functions up into loading RowSource and modifying set value into separate functions so that it can call the function to load the correct options with out changing the value when changing between records but also allow the value to be changes when other inputs are changed
 - [x] Need to change spring inputs to bottom line so the label isn't in the header so when it is changed it isn't confusing. 
@@ -309,14 +325,14 @@ Set in `ToggleAndSetSideSplineValues`, `Fabric_AfterUpdate`, `OverallDropHeight_
 - [x] Between records doesn't work for CL stuff - CL needs a rework
 - [x] Spline tape length still got calculated - should be fixed
 - [x] Check tabbing
-- [ ] Functionalise everything??? There is so much repeated code
+- [x] Functionalise everything??? There is so much repeated code - won't do
 - [x] install type default to N/A if Skin only etc?
 - [x] Need to copy latest revision across
 - [x] Springs are cooked
 - [ ] left to do
-	- [ ] arrange the report
-	- [ ] do a fresh set up run
-	- [ ] test
+	- [x] arrange the report
+	- [x] do a fresh set up run
+	- [x] test
 	- [ ] quick audit?
-- [ ] Cable spring default to N/A for track and NONE for cable
-- [ ] Ask about key tube type
+- [x] Cable spring default to N/A for track and NONE for cable
+- [x] Ask about key tube type
